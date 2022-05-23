@@ -4,7 +4,9 @@
              x:Class="Sem7Morocho.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Registro"/>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
 
 
             <Entry x:Name="txtNombre" Placeholder="Ingrese el Nombre" />
