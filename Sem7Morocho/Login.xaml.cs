@@ -44,7 +44,7 @@ namespace Sem7Morocho
             }
             catch (Exception ex)
             {
-
+                   DisplayAlert("Alerta", ex.Message, "OK");
             }
 
         }
@@ -55,9 +55,9 @@ namespace Sem7Morocho
             return db.Query<Estudiante>("SELECT * FROM Estudiante where Usuario = ? and Contrasena=?", usuario, contrasena);
         }
 
-        private void btnRegistar_Clicked(object sender, EventArgs e)
+        private async void btnRegistar_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushModalAsync(new Registro());
         }
     }
 }
