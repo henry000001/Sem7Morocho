@@ -4,7 +4,9 @@
              x:Class="Sem7Morocho.Elemento">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Actualizar o Eliminar"/>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Actualizar y Eliminar" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
             <Entry x:Name="txtNombre" Placeholder="Nombre"/>
             <Entry x:Name="txtUsuario" Placeholder="Usuario"/>
             <Entry x:Name="txtContrasena" Placeholder="Ingrese Contraseña"/>
