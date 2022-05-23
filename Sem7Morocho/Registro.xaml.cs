@@ -33,8 +33,7 @@ namespace Sem7Morocho
             }
             catch (Exception ex)
             {
-
-            
+                DisplayAlert("Alerta", ex.Message, "OK");
 
             }
         }
