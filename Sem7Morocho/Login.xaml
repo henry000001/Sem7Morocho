@@ -12,7 +12,7 @@
 
             <Entry x:Name="txtcontrasena" Placeholder="Ingrese el contrasena" IsPassword="True"/>
 
-            <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked"/>
+            <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked" BackgroundColor="#2196F3" TextColor="White"/>
             <Button x:Name="btnRegistar" Text="Registro" Clicked="btnRegistar_Clicked"/>
 
         </StackLayout>
