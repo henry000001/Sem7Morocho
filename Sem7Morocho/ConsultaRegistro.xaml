@@ -4,7 +4,9 @@
              x:Class="Sem7Morocho.ConsultaRegistro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Lista de estudiantes"/>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Lista de Estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
             <ListView x:Name="listausuarios" ItemSelected="listausuarios_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
