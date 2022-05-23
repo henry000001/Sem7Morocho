@@ -29,6 +29,7 @@ namespace Sem7Morocho
             {
                 var datosRegistro = new Estudiante { Nombre = txtNombre.Text, Usuario = txtUsuario.Text, Contrasena = txtContraseña.Text };
                 con.InsertAsync(datosRegistro);
+                LimpiarFormulario();
            
             }
             catch (Exception ex)
@@ -36,6 +37,14 @@ namespace Sem7Morocho
                 DisplayAlert("Alerta", ex.Message, "OK");
 
             }
+        }
+        
+        void LimpiarFormulario()
+        {
+            txtNombre.Text = "";
+            txtUsuario.Text = "";
+            txtContrasena.Text = "";
+            DisplayAlert("Alerta", "Se Agrego Correctamente", "OK");
         }
     }
 }
